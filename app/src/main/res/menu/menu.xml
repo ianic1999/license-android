@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigate_scan"
+        android:icon="@drawable/ic_scan"
+        android:title="@string/scanning_title"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/navigate_write"
+        android:icon="@drawable/ic_write"
+        android:title="@string/writing_title"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/navigate_list"
+        android:icon="@drawable/ic_list"
+        android:title="@string/listing_title"
+        app:showAsAction="ifRoom"/>
+</menu>

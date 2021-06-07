@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.fragment.WriteFragment">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/license_plate_input"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Enter license plate..."
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textAllCaps="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/input_button"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="130dp"
+        android:layout_alignTop="@+id/license_plate_input"
+        android:text="CHECK"
+        android:textSize="25sp"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -78,6 +78,7 @@ public class ScanFragment extends Fragment implements SurfaceHolder.Callback {
     @Override
     public void onResume() {
         super.onResume();
+        ((TextView)requireActivity().findViewById(R.id.license_plate_text_view)).setText("");
     }
 
     private void startSourceCamera() {

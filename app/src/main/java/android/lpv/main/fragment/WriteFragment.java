@@ -1,6 +1,12 @@
-package isd.alpr_mobile.main.fragment;
+package android.lpv.main.fragment;
 
 import android.content.Intent;
+import android.lpv.main.activity.ResultActivity;
+import android.lpv.main.model.LicensePlateRequest;
+import android.lpv.main.model.ValidateCarDTO;
+import android.lpv.main.retrofit.APIClient;
+import android.lpv.main.retrofit.ApiService;
+import android.lpv.main.utility.HttpResponse;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,12 +22,6 @@ import com.google.android.material.textfield.TextInputEditText;
 import java.util.Objects;
 
 import isd.alpr_mobile.R;
-import isd.alpr_mobile.main.activity.ResultActivity;
-import isd.alpr_mobile.main.model.LicensePlateRequest;
-import isd.alpr_mobile.main.model.ValidateCarDTO;
-import isd.alpr_mobile.main.retrofit.APIClient;
-import isd.alpr_mobile.main.retrofit.ApiService;
-import isd.alpr_mobile.main.utility.HttpResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

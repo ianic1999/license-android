@@ -1,9 +1,17 @@
-package isd.alpr_mobile.main.fragment;
+package android.lpv.main.fragment;
 
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.lpv.main.activity.ResultActivity;
+import android.lpv.main.model.LicensePlateRequest;
+import android.lpv.main.model.ValidateCarDTO;
+import android.lpv.main.retrofit.APIClient;
+import android.lpv.main.retrofit.ApiService;
+import android.lpv.main.utility.HttpResponse;
+import android.lpv.main.utility.OCRProcessor;
+import android.lpv.main.utility.RequestCode;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -26,14 +34,6 @@ import java.io.IOException;
 import java.util.Objects;
 
 import isd.alpr_mobile.R;
-import isd.alpr_mobile.main.activity.ResultActivity;
-import isd.alpr_mobile.main.model.LicensePlateRequest;
-import isd.alpr_mobile.main.model.ValidateCarDTO;
-import isd.alpr_mobile.main.retrofit.APIClient;
-import isd.alpr_mobile.main.retrofit.ApiService;
-import isd.alpr_mobile.main.utility.OCRProcessor;
-import isd.alpr_mobile.main.utility.RequestCode;
-import isd.alpr_mobile.main.utility.HttpResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -107,7 +107,7 @@ public class ScanFragment extends Fragment implements SurfaceHolder.Callback {
                 ActivityCompat.requestPermissions(
                         Objects.requireNonNull(getActivity()),
                         new String[]{Manifest.permission.CAMERA},
-                        RequestCode.CAMERA_REQUEST_PERMISSION_ID.ordinal());
+                        RequestCode.CAMERA_PERMISSION_CODE.ordinal());
                 return;
             }
             cameraSource.start(cameraView.getHolder());

@@ -1,4 +1,4 @@
-package isd.alpr_mobile.main.model;
+package android.lpv.main.model;
 
 import java.io.Serializable;
 

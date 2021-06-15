@@ -1,4 +1,4 @@
-package isd.alpr_mobile.main.utility;
+package android.lpv.main.utility;
 
 public class ConnectionModel {
     private final int type;

@@ -1,14 +1,13 @@
-package isd.alpr_mobile.main.retrofit;
+package android.lpv.main.retrofit;
+
+import android.lpv.main.model.Car;
+import android.lpv.main.model.LicensePlateRequest;
+import android.lpv.main.model.ValidateCarDTO;
+import android.lpv.main.utility.HttpResponse;
 
 import java.util.List;
 
-import isd.alpr_mobile.main.model.Car;
-import isd.alpr_mobile.main.model.LicensePlate;
-import isd.alpr_mobile.main.model.LicensePlateRequest;
-import isd.alpr_mobile.main.model.ValidateCarDTO;
-import isd.alpr_mobile.main.utility.HttpResponse;
 import retrofit2.Call;
-import retrofit2.Response;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;

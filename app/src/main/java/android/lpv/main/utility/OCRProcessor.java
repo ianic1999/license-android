@@ -1,4 +1,4 @@
-package isd.alpr_mobile.main.utility;
+package android.lpv.main.utility;
 
 import android.util.SparseArray;
 import android.widget.TextView;

@@ -1,5 +1,10 @@
-package isd.alpr_mobile.main;
+package android.lpv.main;
 
+import android.lpv.main.fragment.ListFragment;
+import android.lpv.main.fragment.ScanFragment;
+import android.lpv.main.fragment.WriteFragment;
+import android.lpv.main.utility.ConnectionLiveData;
+import android.lpv.main.utility.InternetProblemsDialogFragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
@@ -12,11 +17,6 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import isd.alpr_mobile.R;
-import isd.alpr_mobile.main.fragment.ListFragment;
-import isd.alpr_mobile.main.fragment.ScanFragment;
-import isd.alpr_mobile.main.utility.ConnectionLiveData;
-import isd.alpr_mobile.main.utility.InternetProblemsDialogFragment;
-import isd.alpr_mobile.main.fragment.WriteFragment;
 
 public class MainActivity extends AppCompatActivity {
 

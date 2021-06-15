@@ -1,4 +1,4 @@
-package isd.alpr_mobile.main.model;
+package android.lpv.main.model;
 
 import com.google.gson.annotations.SerializedName;
 

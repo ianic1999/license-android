@@ -1,12 +1,11 @@
-package isd.alpr_mobile.main.utility;
+package android.lpv.main.utility;
 
-import android.content.Context;
 import android.content.Intent;
+import android.lpv.main.model.Car;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,10 +13,7 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
-
 import isd.alpr_mobile.R;
-import isd.alpr_mobile.main.model.Car;
 
 public class Adapter extends ListAdapter<Car, Adapter.ViewHolder> {
 

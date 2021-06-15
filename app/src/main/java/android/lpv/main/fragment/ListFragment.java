@@ -1,6 +1,10 @@
-package isd.alpr_mobile.main.fragment;
+package android.lpv.main.fragment;
 
-import android.content.Intent;
+import android.lpv.main.model.Car;
+import android.lpv.main.retrofit.APIClient;
+import android.lpv.main.retrofit.ApiService;
+import android.lpv.main.utility.Adapter;
+import android.lpv.main.utility.HttpResponse;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,28 +16,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
-import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.List;
 import java.util.Objects;
 
 import isd.alpr_mobile.R;
-import isd.alpr_mobile.main.model.Car;
-import isd.alpr_mobile.main.model.LicensePlate;
-import isd.alpr_mobile.main.retrofit.APIClient;
-import isd.alpr_mobile.main.retrofit.ApiService;
-import isd.alpr_mobile.main.utility.Adapter;
-import isd.alpr_mobile.main.utility.HttpResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
 
 public class ListFragment extends Fragment {
 
@@ -60,7 +55,7 @@ public class ListFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         adapter = new Adapter();
         layoutManager = new LinearLayoutManager(requireContext());
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(layoutManager);
         ((TextInputEditText) view.findViewById(R.id.license_plate_filter)).addTextChangedListener(new TextWatcher() {

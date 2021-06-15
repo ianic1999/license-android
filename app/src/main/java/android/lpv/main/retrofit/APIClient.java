@@ -1,4 +1,4 @@
-package isd.alpr_mobile.main.retrofit;
+package android.lpv.main.retrofit;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

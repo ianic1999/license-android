@@ -1,9 +1,13 @@
-package isd.alpr_mobile.main.activity;
+package android.lpv.main.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.lpv.main.MainActivity;
+import android.lpv.main.model.ValidateCarDTO;
+import android.lpv.main.retrofit.APIClient;
+import android.lpv.main.retrofit.ApiService;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,11 +19,6 @@ import com.google.android.material.textview.MaterialTextView;
 import java.util.Objects;
 
 import isd.alpr_mobile.R;
-import isd.alpr_mobile.main.MainActivity;
-import isd.alpr_mobile.main.model.Car;
-import isd.alpr_mobile.main.model.ValidateCarDTO;
-import isd.alpr_mobile.main.retrofit.APIClient;
-import isd.alpr_mobile.main.retrofit.ApiService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

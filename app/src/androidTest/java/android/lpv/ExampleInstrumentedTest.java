@@ -1,4 +1,4 @@
-package isd.alpr_mobile;
+package android.lpv;
 
 import android.content.Context;
 
